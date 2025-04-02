@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #f1f1f1;
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.card input{
+    width: 100%;
+    border: 1px solid #0ff9;
+}
+
+.card input:focus{
+    outline: none;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 30px; /* 30px from the right */
+    background-color: #28a745; /* Green for success */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+}
